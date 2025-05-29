@@ -23,7 +23,7 @@ public static class DependencyInjectionExtension
 
     private static void InitDatabaseContexts(IServiceCollection services, IConfiguration configuration)
     {
-        var connectionString = configuration.GetConnectionString(AppSettingsNameConstants.TreeSctructureConnectionStringName);
+        var connectionString = configuration.GetConnectionString(AppSettingsNameConstants.TreeStructureConnectionStringName);
 
         services.AddDbContext<TreeStructureDbContext>(config =>
         {

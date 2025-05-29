@@ -2,5 +2,5 @@
 
 public class AppSettingsNameConstants
 {
-    public const string TreeSctructureConnectionStringName = "TreeSctructure";
+    public const string TreeStructureConnectionStringName = "TreeSctructure";
 }

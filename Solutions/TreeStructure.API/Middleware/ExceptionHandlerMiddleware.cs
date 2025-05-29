@@ -19,13 +19,13 @@ public class ExceptionHandlerMiddleware
         {
             await _next(context);
         }
-        catch (SecureException secureEx)
+        catch (SecureException ex)
         {
-            await HandleSecureExceptionAsync(context, secureEx);
+            await HandleSecureExceptionAsync(context, ex);
         }
-        catch (Exception generalEx)
+        catch (Exception ex)
         {
-            await HandleGeneralExceptionAsync(context, generalEx);
+            await HandleGeneralExceptionAsync(context, ex);
         }
     }
 
